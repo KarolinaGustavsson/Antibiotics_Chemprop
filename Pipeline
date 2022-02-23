@@ -1,0 +1,68 @@
+
+# t-SNE for our traning and test dataset
+
+#-----
+
+# We start with the training set!
+
+### Message Passing Neural Networks 
+
+## Hyper parameter tuning
+
+## Ensembling 
+
+## ROC for training set
+
+# Now we try our test dataset
+
+## ROC for test dataset
+
+## Selecting top X compunds
+
+#-----
+
+# We start with the training set!
+
+### Random Forest 
+
+## ROC for training set
+
+# Now we try our test dataset
+
+## ROC for test dataset
+
+## Selecting top X compunds
+
+#-----
+
+# We start with the training set!
+
+### Support Vector Machines 
+
+## ROC for training set
+
+# Now we try our test dataset
+
+## ROC for test dataset
+
+## Selecting top X compunds
+
+#-----
+
+### Comparing top X compunds from message passing neural networks, random forest and support vector machines
+
+## Looking at list of top compunds
+
+## Evaluating the ROC curves
+
+#-----
+
+### Checking toxicity for top compunds
+
+## Traning model (Message Passing Neural Networks?) on tox21 dataset
+
+## Testing our top compunds
+
+#-----
+
+### RDkit? Should we do this?
