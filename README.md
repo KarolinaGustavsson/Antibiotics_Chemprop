@@ -19,4 +19,4 @@
 
 ### In the end we did the project locally in the terminal 
 
-### Code can be found in Training_Predicting
+### Code can be found in Terminal_Script
