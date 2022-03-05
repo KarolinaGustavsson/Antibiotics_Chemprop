@@ -3,7 +3,7 @@
 ## Training (for article dataset)
 chemprop_train --data_path <path> --dataset_type <type> --save_dir <dir>
 
-## hyperparameter optimization (for coco)
+## hyperparameter optimization (for coco, n=20)
 chemprop_hyperopt --data_path <data_path> --dataset_type <type> --num_iters <n> --config_save_path <config_path>
 
 ## Predicting
