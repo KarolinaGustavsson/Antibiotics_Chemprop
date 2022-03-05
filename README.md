@@ -1,5 +1,9 @@
 # Antibiotics_Chemprop
 
+## Goal
+
+### Getting an understanding for drug discovery using machine learning and getting experience using chemprop
+
 ## Datasets 
 
 ### Datasets can be found in the datasets folder: we used article_training for traning our model and assessing it, then we wanted to predict something novel — for that we used coco_test
