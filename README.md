@@ -6,7 +6,7 @@
 
 ### Article-traning is the traning dataset used in the article we used as inspiration for this project: https://www.sciencedirect.com/science/article/pii/S0092867420301021 
 
-### Coco_test is smiles strings collected from a database of natural compunds by filtering for compunds with 0-5 carbons
+### Coco_test is smiles strings collected from a database of natural compunds by filtering for compunds with 0-5 carbons https://coconut.naturalproducts.net
 ### In order to get the data we want, as well as convert it from an sdf file into a csv we used the code in Converting_SDF_Files
 
 ## Training and Predicting
