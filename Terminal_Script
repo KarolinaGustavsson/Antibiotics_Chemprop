@@ -9,4 +9,6 @@ chemprop_hyperopt --data_path <data_path> --dataset_type <type> --num_iters <n> 
 ## Predicting
 chemprop_predict --test_path <test_path> --checkpoint_dir <checkpoints> --preds_path <preds>
 
+## Interpreting (model interprability - which chemical groups give these properties?)
+chemprop_interpret --data_path <path> --checkpoint_dir <dir> --property_id 1
 
