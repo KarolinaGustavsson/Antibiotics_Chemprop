@@ -1,6 +1,8 @@
 # Antibiotics_Chemprop
 
-## Datasets can be found in the datasets folder: we used article_training for traning our model and assessing it, then we wanted to predict something novel — for that we used coco_test
+## Datasets 
+
+### Datasets can be found in the datasets folder: we used article_training for traning our model and assessing it, then we wanted to predict something novel — for that we used coco_test
 
 ### Article-traning is the traning dataset used in the article we used as inspiration for this project: https://www.sciencedirect.com/science/article/pii/S0092867420301021 
 
