@@ -26,3 +26,79 @@ The project report, along with a list of our antibiotic candidates, is available
 ## Reproducibility
 
 The commands that we ran in order to obtain our results can be found in the `commands.md` file.
+
+
+## Environment Setup
+
+
+### Install Miniconda and activate conda:
+
+Please have a look at these pages in case you don't have
+a working conda installation already.
+
+https://docs.conda.io/en/latest/miniconda.html
+
+https://conda.io/projects/conda/en/latest/user-guide/install/index.html
+
+
+### Install packages
+
+Make sure to also have a look at the most recent
+[Chemprop installation instructions](https://github.com/chemprop/chemprop#installation),
+just in case the instructions here have become out-dated.
+We are going to install it from PyPi.
+
+Create a new environment for chemprop and activate it.
+
+```
+conda create -n chemprop python=3.8
+conda activate chemprop
+```
+
+Make sure that the current pip is from the current environment.
+
+```
+which pip
+```
+
+Install Chemprop and other necessary packages.
+
+```
+conda install -c conda-forge rdkit
+pip install git+https://github.com/bp-kelley/descriptastorus  
+pip install chemprop
+```
+
+You should now be able to use Chemprop's CLI, with commands
+starting with `chemprop_*`. (need to reboot the terminal? or
+will they be available right away?)
+
+From here, you should be able to start a Jupyter notebook session,
+and start using Chemprop. In our case, however, we've had to also
+install jupyter notebook within the current conda environment, so
+that the `chemprop` python module would get discovered inside the
+notebook.
+
+For solving the problem with `import chemprop` within Jupyter notebooks,
+the following steps will help.
+
+```
+conda install ipykernel  notebook
+conda install -c conda-forge ipywidgets
+jupyter notebook .
+```
+
+Test your installation by entering `import chemprop`.
+
+Chemprop will show some warnings the first time it gets imported,
+but we were unable to find any solutions to them, and they seemed
+to be okay to ignore.
+
+
+### Closing and deactivating the environment
+
+```
+jupyter notebook list
+jupyter notebook stop <port number>
+conda deactivate
+```
