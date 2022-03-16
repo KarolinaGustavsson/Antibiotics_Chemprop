@@ -1,22 +1,26 @@
-# Antibiotics_Chemprop
+# Antibiotic Discovery Using Graph Deep Learning
 
 ## Goal
 
-### Getting an understanding for drug discovery using machine learning and getting experience using chemprop
+Getting an understanding of drug discovery using machine learning and getting experience using [Chemprop](https://chemprop.readthedocs.io/en/latest/).
+Chemprop is a tool which allows for modeling of molecules using message passing graph neural networks.
 
-## Datasets 
+## Data
 
-### Datasets can be found in the datasets folder: we used article_training for traning our model and assessing it, then we wanted to predict something novel — for that we used coco_test
+The datasets used in this project are available in the `data` folder. We used `article_training.csv` for training our model and assessing it. And then used the obtained model in order to predict novel antibiotic candidates using the `coco_test.csv` dataset.
 
-### Article-traning is the traning dataset used in the article we used as inspiration for this project: https://www.sciencedirect.com/science/article/pii/S0092867420301021 
+Our training dataset comes from the article which we used as inspiration for this project: [A Deep Learning Approach to Antibiotic Discovery](https://www.sciencedirect.com/science/article/pii/S0092867420301021).
 
-### Coco_test is smiles strings collected from a database of natural compunds by filtering for compunds with 0-5 carbons https://coconut.naturalproducts.net
-### In order to get the data we want, as well as convert it from an sdf file into a csv we used the code in Converting_SDF_Files
+Our dataset used for predictions consists of SMILES strings collected from [COCONUT](https://coconut.naturalproducts.net), a database of natural compounds, by filtering for compounds with 0-5 carbons. Our conversion script `sdf_to_csv.py` is then used in order to convert the COCONUT data from SDF to CSV.
 
-## Training and Predicting
+## Training and Prediction
 
-### At first we tried to make a notebook in colab, then deepnote and databricks: we had issues with installing conda inside of them. We should have tried to make a minimum viable product locally first. 
+At first, we tried to make a notebook in Google Colab, then DeepNote and Databricks:, but we faced severe issues while trying to install and/or use Miniconda on them. We should have tried to make a minimum viable product first, locally. In the end, we decided to do the project locally, using the terminal and Jupyter Notebooks.
 
-### In the end we did the project locally in the terminal 
+## Report
 
-### Code can be found in Terminal_Script
+The project report, along with a list of our antibiotic candidates, is available in PDF format in this repository.
+
+## Reproducibility
+
+The commands that we ran in order to obtain our results can be found in the `commands.md` file.
