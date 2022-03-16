@@ -5,6 +5,8 @@
 Getting an understanding of drug discovery using machine learning and getting experience using [Chemprop](https://chemprop.readthedocs.io/en/latest/).
 Chemprop is a tool which allows for modeling of molecules using message passing graph neural networks.
 
+This is done as the final project in the course [ID2223 Scalable Machine Learning and Deep Learning](https://id2223kth.github.io) at [KTH](https://kth.se).
+
 ## Data
 
 The datasets used in this project are available in the `data` folder. We used `article_training.csv` for training our model and assessing it. And then used the obtained model in order to predict novel antibiotic candidates using the `coco_test.csv` dataset.
